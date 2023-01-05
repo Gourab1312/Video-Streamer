@@ -1,0 +1,51 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.header__logo{
+    height: 25px;
+    object-fit: contain; 
+    /* this is a svg so the aspect ratio is maintained
+    but in case of a png if the image gets distorted we have to use this  */
+
+    margin-left: 20px;
+    /* make the header sticky at the position of top 0 */
+    position: sticky;
+    top: 0;
+    /* just to be sure that the header is on top of everything including icons(since every other thing generally is gonna have a z index of less than 100) */
+    z-index: 100;
+    background-color: white;
+}
+
+.header__input{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    border: 1px solid lightgray;
+}
+
+.header__icon{
+    margin-right: 8px;
+}
+
+.header__inputButton{
+    width: 50px !important;
+    background-color: #fafafa;
+    border-left: 1px solid lightgray;
+    color: gray;
+}
+
+.header__icons{
+    display: flex;
+    align-items: center;
+}
+
+/* in header input target the input which is a direct child */
+.header__input > input {
+    /* flex 1 means use as much room as you can inside the container you are in as a element */
+    flex:1;
+    border:none;
+}

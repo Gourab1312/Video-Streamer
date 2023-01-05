@@ -1,0 +1,44 @@
+.sidebarRow{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.sidebarRow__icon{
+    color:#606060;
+    font-size: large !important;
+}
+
+.sidebarRow__title{
+    flex: 1;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.sidebarRow:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+/* when we hover on the sidebar row the colour of the icons changes to red */
+.sidebarRow:hover > .sidebarRow__icon{
+    color: red;
+}
+
+.sidebarRow:hover > .sidebarRow__title{
+    font-weight: bold;
+}
+
+/* this basically says that if we have a sidebarRow element and if it also contains the selected class then we change the following */
+.sidebarRow.selected{
+    background-color: lightgray;
+}
+
+.sidebarRow.selected > .sidebarRow__icon{
+    color:red;
+}
+
+.sidebarRow.selected > .sidebarRow__title{
+    font-weight: bold;
+}

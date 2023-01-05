@@ -1,0 +1,12 @@
+.sidebar{
+    flex: 0.2;
+    /* this basically says inside of that parent container give this sidebar only a width of 20 percent */
+}
+
+.sidebar > hr{
+    height: 1px;
+    border: 0;
+    background-color: lightgray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
